@@ -1,0 +1,84 @@
+*{
+	border:0;
+	margin: 0;
+	padding: 0;
+}
+
+article,figcaption,figure,footer,header,hgroup,nav,section{
+	display: block;
+}
+
+
+body{
+	background: #0f6786;
+/*background: -moz-linear-gradient(-45deg,  #0f6786 0%, #ffffff 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0f6786), color-stop(100%,#ffffff));
+background: -webkit-linear-gradient(-45deg,  #0f6786 0%,#ffffff 100%);
+background: -o-linear-gradient(-45deg,  #0f6786 0%,#ffffff 100%);
+background: -ms-linear-gradient(-45deg,  #0f6786 0%,#ffffff 100%);
+background: linear-gradient(135deg,  #0f6786 0%,#ffffff 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f6786', endColorstr='#ffffff',GradientType=1 );*/
+
+}
+
+div#barra{
+	padding: 0 0 3em 0;
+
+}
+
+header h1, nav{
+	display: inline-block;
+	max-width: 100%
+	vertical-align: middle;
+	
+}
+
+header{
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+header, nav, footer{
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: .25em;
+	text-align: center;
+}
+
+img{
+	padding: 2em 0 0 0;
+	max-width: 100%;
+}
+
+label{
+ 	color: #ffffff;
+}
+
+section#contenido{
+	text-align: center;
+	
+}
+
+
+.fade{
+	opacity: 1;
+	filter: alpha(opacity=10);
+	-ms-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	position: center;
+	vertical-align: center;
+}
+
+.fade:hover{
+	opacity: 0.7;
+	filter: alpha(opacity=7);
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
