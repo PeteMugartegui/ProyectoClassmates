@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
 	<meta charset="utf-8"/>
 	<meta name="description" content="Tu horario de clases y agenda de actividades diarias en un solo lugar"/>
 	<meta name="viewport" content="width-device-width, inicial-scale=1"/>
-	<link rel="stylesheet" type="text/css" href="css/estilosclassmates.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/estilosclassmates.css"/>
+	
 	<title>Tu horario de clases en cualquier dispositivo</title>
 	<!--[if lt IE 9]>
 	<script src= "//html5ahiv.googlecode.com/svn/trunk/html5.js" ></script>
@@ -15,7 +16,7 @@
 <header>
 	<h1>
 		<a href="index.html">
-			<img class="fade" src="img/classmateslogo.png"/>
+			<img class="fade" src="../img/classmateslogo.png"/>
 		</a>
 	</h1>
 	<nav>
@@ -23,10 +24,15 @@
 	</nav>
 </header>
 <section id="contenido">
+	<form>
+		<label>Username</label>
+		<input type="text" class="span3">
+		<label>Password</label>
+		<input type="text" class="span3"><br>
+		<button class="btn btn-primary">Iniciar Sesión</button><br><br>
+		<button class="btn">Resgistrate</button>
+	</form>
 	<section id="principal">
-		<article  id="galeria-inicio">
-				
-			</article>
 		<article>
 			<div class="navbar navbar-inverse navbar-fixed-top" id="barra">
       <div class="navbar-inner">
@@ -39,13 +45,13 @@
           <a class="brand" href="#">Classmates</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
 
             <ul class="nav pull-right">
-            	<li><a href="html/iniciasesion.html">Iniciar Sesión</a></li>
+            	<li class="active"><a href="html/iniciasesion.html">Iniciar Sesión</a></li>
             	<li><a href="#Inicio">Registrarse</a></li>
 
             </ul>
@@ -64,6 +70,6 @@
 	Classmates todos los derechos reservados. 
 </footer >
 <!--EL javascript, situado al final para que la pagina cargue mas rapido-->
-<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.js"></script>
 </body>
 </html>
