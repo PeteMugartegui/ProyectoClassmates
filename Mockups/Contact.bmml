@@ -1,0 +1,45 @@
+<mockup version="1.0" skin="sketch" measuredW="1169" measuredH="720">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="172" y="49" w="987" h="661" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Classmates%0Ahttp%3A//ww.classmates.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::MenuBar" x="172" y="112" w="987" h="29" measuredW="849" measuredH="29" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>4</selectedIndex>
+        <text>Classmates%2C%20%20%20%20%20%2CHome%2CAbout%2CContact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2CIniciar%20Sesi%F3n%2C%20Registrarse</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="172" y="141" w="275" h="62" measuredW="800" measuredH="180" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>../../../../../Desktop/Sublime/Classmatesprueba/img/classmateslogo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="598" y="602" w="-1" h="-1" measuredW="65" measuredH="28" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Button</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="553" y="278" w="-1" h="-1" measuredW="157" measuredH="25" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Envianos%20tus%20comentarios</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextArea" x="532" y="354" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TextInput" x="538" y="558" w="200" h="-1" measuredW="79" measuredH="29" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="578" y="533" w="-1" h="-1" measuredW="119" measuredH="25" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Correo%20electronico</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
