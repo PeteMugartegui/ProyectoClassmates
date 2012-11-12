@@ -13,7 +13,7 @@
     </control>
     <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="152" y="121" w="275" h="62" measuredW="800" measuredH="180" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../../Desktop/Sublime/Classmatesprueba/img/classmateslogo.png</src>
+        <src>../img/classmateslogo.png</src>
       </controlProperties>
     </control>
     <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="183" y="198" w="621" h="449" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">

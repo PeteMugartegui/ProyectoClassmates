@@ -7,13 +7,13 @@
     </control>
     <control controlID="1" controlTypeID="com.balsamiq.mockups::MenuBar" x="84" y="70" w="987" h="29" measuredW="849" measuredH="29" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Classmates%2C%20%20%20%20%20%2CHome%2CAbout%2CContact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2CIniciar%20Sesi%F3n%2C%20Registrarse</text>
         <selectedIndex>-1</selectedIndex>
+        <text>Classmates%2C%20%20%20%20%20%2CHome%2CAbout%2CContact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2CIniciar%20Sesi%F3n%2C%20Registrarse</text>
       </controlProperties>
     </control>
     <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="177" y="114" w="-1" h="-1" measuredW="800" measuredH="180" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../../Desktop/Sublime/Classmatesprueba/img/classmateslogo.png</src>
+        <src>../img/classmateslogo.png</src>
       </controlProperties>
     </control>
     <control controlID="4" controlTypeID="com.balsamiq.mockups::CoverFlow" x="242" y="275" w="655" h="267" measuredW="493" measuredH="198" zOrder="3" locked="false" isInGroup="-1"/>
@@ -25,13 +25,13 @@
     </control>
     <control controlID="7" controlTypeID="com.balsamiq.mockups::MenuBar" x="1247" y="149" w="987" h="29" measuredW="849" measuredH="29" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Classmates%2C%20%20%20%20%20%2CHome%2CAbout%2CContact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2CIniciar%20Sesi%F3n%2C%20Registrarse</text>
         <selectedIndex>6</selectedIndex>
+        <text>Classmates%2C%20%20%20%20%20%2CHome%2CAbout%2CContact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%2CIniciar%20Sesi%F3n%2C%20Registrarse</text>
       </controlProperties>
     </control>
     <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="1340" y="178" w="-1" h="-1" measuredW="800" measuredH="180" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <src>../../../../../Desktop/Sublime/Classmatesprueba/img/classmateslogo.png</src>
+        <src>../img/classmateslogo.png</src>
       </controlProperties>
     </control>
     <control controlID="9" controlTypeID="com.balsamiq.mockups::TextInput" x="1645" y="449" w="190" h="-1" measuredW="185" measuredH="29" zOrder="8" locked="false" isInGroup="-1">

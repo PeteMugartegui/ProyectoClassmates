@@ -15,7 +15,7 @@
 <body>
 <header>
 	<h1>
-		<a href="../index.html">
+		<a href="index.html">
 			<img class="fade" src="../img/classmateslogo.png"/>
 		</a>
 	</h1>
@@ -23,10 +23,30 @@
 		
 	</nav>
 </header>
-<section id="contenido">
-	<div id="parrafo">
-		<p align="center" id="text"><h2>Classmates es la aplicación donde puedes guardar tu horario de clases, además que podrás guardar actividades, y tareas que tengas pendientes y creas que vas a olvidar. La aplicación cuenta con un sistema de alarma que te avisará con un tiempo determinado tu siguiente clase, tu actividad, y tareas.</h2></p>
-	</div>	
+<section>
+	<div class="row-fluid">
+		<div align="center" class="span4"> 
+			<label>Agregar Materia</label><br>
+			<select class="span4">
+				  <option>Programación</option>
+				  <option>Analisis y Diseño</option>
+				  <option>Base de Datos</option>
+				  <option>Sistemas Digitales</option>
+				  <option>Circuitos</option>
+			</select><br><br>
+			<label>¿A que hora inicia tu clase?</label><br>
+			<input class="span2" type="text">:<input class="span2" type="text"><select class="span2"><option>a.m.</option><option>p.m.</option></select><br><br>
+			<button class="btn btn-primary">Guardar</button>
+		</div>
+		<!--Aqui va donde se muestra el horario-->
+		<div class="span8"> 
+			<center>
+				<label>Tu horario de clases:</label>
+			<div class="rectangle"></div>
+			</center>
+		</div>
+	</div>
+	
 	<section id="principal">
 		<article>
 			<div class="navbar navbar-inverse navbar-fixed-top" id="barra">
@@ -41,8 +61,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="../index.html">Home</a></li>
-              <li class="active"><a href="#about">About</a></li>
-              <li><a href="contacto.html">Contact</a></li>
+              <li><a href="About.html">About</a></li>
+              <li class="active"><a href="contacto.html">Contact</a></li>
             </ul>
 
             <ul class="nav pull-right">
