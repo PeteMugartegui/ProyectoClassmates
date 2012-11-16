@@ -24,19 +24,28 @@
 	</nav>
 </header>
 <section>
+	<form method="post" action="#">
 	<div class="row-fluid">
 		<div align="center" class="span4"> 
 			<label>Agregar Materia</label><br>
-			<select class="span4">
-				  <option>Programación</option>
+			<select class="span4" name="materia">
+				  <option id="pro">Programación</option>
 				  <option>Analisis y Diseño</option>
 				  <option>Base de Datos</option>
 				  <option>Sistemas Digitales</option>
 				  <option>Circuitos</option>
 			</select><br><br>
+			<label>¿Qué día tienes tu clase?</label>
+			<select class="span4" name="dia">
+				<option id="1">Lunes</option>
+				<option>Martes</option>
+				<option>Miercoles</option>
+				<option>Jueves</option>
+				<option>Viernes</option>
+			</select>
 			<label>¿A que hora inicia tu clase?</label><br>
 			<input class="span2" type="text">:<input class="span2" type="text"><select class="span2"><option>a.m.</option><option>p.m.</option></select><br><br>
-			<button class="btn btn-primary">Guardar</button>
+			<input type="submit" class="btn btn-primary" value="Enviar">
 		</div>
 		<!--Aqui va donde se muestra el horario-->
 		<div class="span8"> 
@@ -76,6 +85,7 @@
     </div>
 			
 		</article>
+		</form>
 	</section>
 	<aside>
 		<!--Publicidad y Widgets Sociales-->

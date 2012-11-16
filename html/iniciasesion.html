@@ -24,17 +24,17 @@
 	</nav>
 </header>
 <section id="contenido">
-	<form>
+	<form action="iniciasesion.php" class="form-horizontal" method="POST">
 		<label>Username</label>
-		<input type="text" class="span3">
+		<input type="text" class="span3" name="usuario">
 		<label>Password</label>
-		<input type="text" class="span3"><br>
+		<input type="password" class="span3" name="contrasena"><br>
 		<center><label class="checkbox">
         	<input type="checkbox"> Remember me
         </label></center>
-		<button class="btn btn-primary">Iniciar Sesión</button><br><br>
+		<button class="btn btn-primary" name="enviar">Iniciar Sesión</button><br><br>
 		<button class="btn">Resgistrate</button>
-	</form clas="form-horizontal">
+	</form >
 	<section id="principal">
 		<article>
 			<div class="navbar navbar-inverse navbar-fixed-top" id="barra">

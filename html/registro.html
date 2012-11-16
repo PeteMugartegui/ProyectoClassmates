@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="es">
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
@@ -24,40 +24,40 @@
 	</nav>
 </header>
 <section id="contenido-registro">
-	<form class="row-fluid">
-		<center>	
+	<form action="registro.php" method="POST" class="row-fluid">
+	<center>	
 		<div class="row-fluid">
 			<div class="span6">
 				<label>Nombre de Usuario</label>
-				<input type="text" class="span6">
+				<input type="text" class="span6" name="usuario">
 			</div>
 			<div class="span6">
 				<label>Nombres</label>
-				<input type="text" class="span6"><br>
+				<input type="text" class="span6" name="nombre"><br>
 			</div>
 		<div class="row-fluid">
 				<div class="span6">
 					<label>Email</label>
-					<input type="text" class="span6"><br>
+					<input type="text" class="span6" name="email"><br>
 				</div>
 			<div class="span6">
 				<label>Apellidos</label>
-				<input type="text" class="span6"><br>
+				<input type="text" class="span6" name="apellido"><br>
 			</div>
 		</div>
 		<div class="row-fluid">
 
 			<div class="span6">
 				<label>Password</label>
-				<input type="text" class="span6"><br>
+				<input type="password" class="span6" name="contrasena"><br>
 			</div>
 			<div class="span6">
 				<label>Direccion</label>
-				<input type="text" class="span6"><br><br>
+				<input type="text" class="span6" name="direccion"><br><br>
 			</div>	
 		</div>
 		</div>
-		<button class="btn btn-primary">Enviar</button>
+		<button class="btn btn-primary" name="enviar">Enviar</button>
 		<button class="btn">Cancelar</button>
 	</center>
 	</form>
