@@ -28,7 +28,7 @@
         $(document).ready(function() {     
            var view="week";          
            
-            var DATA_FEED_URL = "php/datafeed.php";
+            var DATA_FEED_URL = "php/datafeed.db.php";
             var op = {
                 view: view,
                 theme:3,
@@ -68,16 +68,16 @@
             });
             function cal_beforerequest(type)
             {
-                var t="Loading data...";
+                var t="Cargando...";
                 switch(type)
                 {
                     case 1:
-                        t="Loading data...";
+                        t="LCargando...";
                         break;
                     case 2:                      
                     case 3:  
                     case 4:    
-                        t="The request is being processed ...";                                   
+                        t="La respuesta esta siendo procesada ...";                                   
                         break;
                 }
                 $("#errorpannel").hide();
@@ -93,7 +93,7 @@
                     case 2:
                     case 3:
                     case 4:
-                        $("#loadingpannel").html("Success!");
+                        $("#loadingpannel").html("Bien!");
                         window.setTimeout(function(){ $("#loadingpannel").hide();},2000);
                     break;
                 }              
@@ -126,8 +126,8 @@
             {           
                 
                 $.alerts.okButton="Ok";  
-                $.alerts.cancelButton="Cancel";  
-                hiConfirm("Are You Sure to Delete this Event", 'Confirm',function(r){ r && callback(0);});           
+                $.alerts.cancelButton="Cancelar";  
+                hiConfirm("Quieres eliminar este evento?", 'Confirm',function(r){ r && callback(0);});           
             }
             function wtd(p)
             {

@@ -30,6 +30,6 @@ if(!$con)
              die('Error de insercion'.mysql_error());
         }
         echo "Se agrego un registro"; 
-   } // Poner la redireccion de la pagina else header("Location: http://www.google.com");
+   } header("Location: seleccionmenu.html");
 
 ?>
