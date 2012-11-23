@@ -72,7 +72,7 @@
                 switch(type)
                 {
                     case 1:
-                        t="LCargando...";
+                        t="Cargando...";
                         break;
                     case 2:                      
                     case 3:  
@@ -234,33 +234,33 @@
 	<div>
 
       <div id="calhead" style="padding-left:1px;padding-right:1px;">          
-            <div class="cHead"><div class="ftitle">My Calendar</div>
-            <div id="loadingpannel" class="ptogtitle loadicon" style="display: none;">Loading data...</div>
-             <div id="errorpannel" class="ptogtitle loaderror" style="display: none;">Sorry, could not load your data, please try again later</div>
+            <div class="cHead"><div class="ftitle">Classmates</div>
+            <div id="loadingpannel" class="ptogtitle loadicon" style="display: none;">Cargando info...</div>
+             <div id="errorpannel" class="ptogtitle loaderror" style="display: none;">Lo sentimos no hemos podido cargar su info., por favor intente más tarde</div>
             </div>          
             
             <div id="caltoolbar" class="ctoolbar">
               <div id="faddbtn" class="fbutton">
                 <div><span title='Click to Create New Event' class="addcal">
 
-                New Event                
+                Nuevo evento                
                 </span></div>
             </div>
             <div class="btnseparator"></div>
              <div id="showtodaybtn" class="fbutton">
                 <div><span title='Click to back to today ' class="showtoday">
-                Today</span></div>
+                hoy</span></div>
             </div>
               <div class="btnseparator"></div>
 
             <div id="showdaybtn" class="fbutton">
-                <div><span title='Day' class="showdayview">Day</span></div>
+                <div><span title='Day' class="showdayview">Día</span></div>
             </div>
               <div  id="showweekbtn" class="fbutton fcurrent">
-                <div><span title='Week' class="showweekview">Week</span></div>
+                <div><span title='Week' class="showweekview">Semana</span></div>
             </div>
               <div  id="showmonthbtn" class="fbutton">
-                <div><span title='Month' class="showmonthview">Month</span></div>
+                <div><span title='Month' class="showmonthview">Mes</span></div>
 
             </div>
             <div class="btnseparator"></div>
@@ -278,7 +278,7 @@
             <div class="fshowdatep fbutton">
                     <div>
                         <input type="hidden" name="txtshow" id="hdtxtshow" />
-                        <span id="txtdatetimeshow">Loading</span>
+                        <span id="txtdatetimeshow">Cargando...</span>
 
                     </div>
             </div>
@@ -305,6 +305,7 @@
         </div>
      
   </div>
+  <a href="../../html/seleccionmenu.html">Regresar</a>
 	
 	<section id="principal">
 		<article>
@@ -316,17 +317,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="../index.html">Classmates</a>
+          <a class="brand" href="../../index.html">Classmates</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li><a href="../index.html">Home</a></li>
+              <li><a href="../../index.html">Home</a></li>
               <li><a href="About.html">About</a></li>
-              <li class="active"><a href="contacto.html">Contact</a></li>
+              <li class="active"><a href="/../../html/contacto.html">Contact</a></li>
             </ul>
 
             <ul class="nav pull-right">
-            	<li><a href="iniciasesion.html">Iniciar Sesión</a></li>
-            	<li><a href="registro.html">Registrarse</a></li>
+            	<li><a href="../../html/iniciasesion.html">Iniciar Sesión</a></li>
+            	<li><a href="../../html/registro.html">Registrarse</a></li>
 
             </ul>
           </div><!--/.nav-collapse -->

@@ -24,7 +24,7 @@
 	</nav>
 </header>
 <section>
-	<form method="post" action="#">
+	<form method="post" action="horario.php">
 	<div class="row-fluid">
 		<div align="center" class="span4"> 
 			<label>Agregar Materia</label><br>
@@ -44,18 +44,50 @@
 				<option>Viernes</option>
 			</select>
 			<label>¿A que hora inicia tu clase?</label><br>
-			<input class="span2" type="text">:<input class="span2" type="text"><select class="span2"><option>a.m.</option><option>p.m.</option></select><br><br>
+			<input class="span2" type="text" name="horas">:<input class="span2" type="text" name="minutos"><select class="span2" name="dif"><option>a.m.</option><option>p.m.</option></select><br><br>
 			<input type="submit" class="btn btn-primary" value="Enviar">
 		</div>
 		<!--Aqui va donde se muestra el horario-->
 		<div class="span8"> 
 			<center>
 				<label>Tu horario de clases:</label>
-			<div class="rectangle"></div>
+			<div class="rectangle"> 
+				<?php
+				$con = mysql_connect("localhost","root","12345");  
+
+					if(!$con)
+					{
+					    die('no se pudo conectar con el servidor'.mysql_error());
+
+					}
+					mysql_select_db("classmates",$con);
+					echo "<table>"; //EMPIEZA A CREAR LA TABLA CON LOS ENCABEZADOS DE TABLA
+					echo "<tr>";//<tr> CREA UNA NUEVA FILA
+					echo "<td>Materia</td>";//<td> CREA NUEVA COLUMNA
+					echo "<td>Dia</td>";
+					echo "<td>Hora</td>";
+					echo "<td>Minutos/td>";
+					echo "</tr>";
+					$query = mysql_query("SELECT * FROM horario");
+					while ($resultado = mysql_fetch_array($query)) {
+						echo "<tr>";
+						echo "<td>".$sultado[0]."</td>";//EN CADA CELDA SE COLOCA EL CONTENIDO DE REG
+						echo "<td>".$resultado[1]."</td>";
+						echo "<td>".$resultado[2]."</td>";
+						echo "<td>".$resultado[3]."</td>";
+						$reg = mysql_fetch_array($resultado, MYSQL_BOTH);
+						echo "</tr>";
+
+					}
+					echo "</table>";//FINALIZA LA TABLA
+					mysql_close($conexion);
+   				?>
+
+			</div>
 			</center>
 		</div>
 	</div>
-	
+	<a href="seleccionmenu.html">Regresar</a>
 	<section id="principal">
 		<article>
 			<div class="navbar navbar-inverse navbar-fixed-top" id="barra">
