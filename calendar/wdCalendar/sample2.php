@@ -5,7 +5,7 @@
 	<meta charset="utf-8"/>
 	<meta name="description" content="Tu horario de clases y agenda de actividades diarias en un solo lugar"/>
 	<meta name="viewport" content="width-device-width, inicial-scale=1"/>
-	<link rel="stylesheet" type="text/css" href="../css/estilosclassmates.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/estilosclassmates.css"/>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <link href="css/dailog.css" rel="stylesheet" type="text/css" />
     <link href="css/calendar.css" rel="stylesheet" type="text/css" /> 
@@ -26,7 +26,7 @@
     <script src="src/Plugins/jquery.calendar.js" type="text/javascript"></script>   
      <script type="text/javascript">
         $(document).ready(function() {     
-           var view="week";          
+           var view="month";          
            
             var DATA_FEED_URL = "php/datafeed.db.php";
             var op = {
@@ -219,19 +219,40 @@
 	<script src= "//html5ahiv.googlecode.com/svn/trunk/html5.js" ></script>
 	<!--[endif]-->
 </head>
-<body>
+<body style="background:#0F6786;">
+  
+<div class="navbar navbar-inverse navbar-fixed-top" id="barra">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../../index.html">Classmates</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li ><a href="../../html/contacto.html">Contact</a></li>
+              <li><a href="../../html/seleccionmenu.html">Menú</a></li>
+            </ul>
+
+            <ul class="nav pull-right">
+                <li><a href="../../html/iniciasesion.html">Iniciar Sesión</a></li>
+                <li><a href="../../html/registro.html">Registrarse</a></li>
+
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+            
 <header>
-	<h1>
-		<a href="index.html">
-			<img class="fade" src="../../img/classmateslogo.png"/>
-		</a>
-	</h1>
-	<nav>
-		
-	</nav>
+    <img class="fade" src="../../img/classmateslogo.png"/>
 </header>
-<section>
-	<div>
+<section id="contenido">
+	<section id="principal">
 
       <div id="calhead" style="padding-left:1px;padding-right:1px;">          
             <div class="cHead"><div class="ftitle">Classmates</div>
@@ -285,7 +306,7 @@
             
             <div class="clear"></div>
             </div>
-      </div>
+      </section>
       <div style="padding:1px;">
 
         <div class="t1 chromeColor">
@@ -308,34 +329,7 @@
   <a href="../../html/seleccionmenu.html">Regresar</a>
 	
 	<section id="principal">
-		<article>
-			<div class="navbar navbar-inverse navbar-fixed-top" id="barra">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../../index.html">Classmates</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li class="active"><a href="/../../html/contacto.html">Contact</a></li>
-            </ul>
-
-            <ul class="nav pull-right">
-            	<li><a href="../../html/iniciasesion.html">Iniciar Sesión</a></li>
-            	<li><a href="../../html/registro.html">Registrarse</a></li>
-
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-			
-		</article>
+		
 	</section>
 	<aside>
 		<!--Publicidad y Widgets Sociales-->
@@ -347,6 +341,6 @@
       </div>
     </div>
 <!--EL javascript, situado al final para que la pagina cargue mas rapido-->
-<script src="../../js/bootstrap.js"></script>
+<script src="/../../js/bootstrap.js"></script>
 </body>
 </html>
