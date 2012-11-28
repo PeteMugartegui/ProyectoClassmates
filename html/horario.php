@@ -15,9 +15,9 @@ if(isset($materia) && isset($dia) && isset($hora) && isset($minutos) && isset($a
     if(!mysql_query($consulta)){
         die('Error de insercion'.mysql_error());
     }
-    echo "Se agrego un registro"; 
+    //echo "Se agrego un registro"; 
 }
-//header("Location: horario.html");
+header("Location: horario.html");
 
 desconectar();
 ?>
