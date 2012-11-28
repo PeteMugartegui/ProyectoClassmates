@@ -11,6 +11,7 @@ function conectar(){
 	}else{
 		//echo "Conectado a mysql";
 		mysql_select_db($database, $conection);
+		mysql_query("SET NAMES 'utf8'");
 	}
 }
 
