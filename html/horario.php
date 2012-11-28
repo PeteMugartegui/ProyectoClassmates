@@ -1,34 +1,23 @@
 <?php
+include_once("../funciones.php");
+conectar();
 
-$con = mysql_connect("localhost","root","12345");  
+$materia = $_POST['materia'];
+echo $dia = $_POST['dia'];
+$hora = $_POST['horas'];
+$minutos = $_POST['minutos'];
+$am_pm = $_POST['dif'];
 
 
-if(!$con)
-{
-    die('no se pudo conectar con el servidor'.mysql_error());
-
+if(isset($materia) && isset($dia) && isset($hora) && isset($minutos) && isset($am_pm)) {
+    $consulta = "INSERT INTO horario(materia,dia,hora,minuto,dif) 
+    VALUES ('$materia','$dia','$hora','$minutos','$am_pm')";
+    if(!mysql_query($consulta)){
+        die('Error de insercion'.mysql_error());
+    }
+    echo "Se agrego un registro"; 
 }
+//header("Location: horario.html");
 
-     $valor1 = $_POST['materia'];
-     $valor2 = $_POST['dia'];
-     $valor3 = $_POST['horas'];
-     $valor4 = $_POST['minutos'];
-     $valor5 = $_POST['dif'];
-
-
-    if(isset($valor1) && isset($valor2) && isset($valor3) && isset($valor4) && isset($valor5)) {
-
-	mysql_select_db("classmates",$con);
-
-	
-	$consulta="INSERT INTO horario(materia,dia,hora,minuto,dif)
-	   VALUES ('$_POST[materia]','$_POST[dia]','$_POST[horas]','$_POST[minutos]','$_POST[dif]')";
-	
-        if(!mysql_query($consulta,$con))
-           {
-             die('Error de insercion'.mysql_error());
-        }
-        echo "Se agrego un registro"; 
-   } header("Location: horario.html");
-
+desconectar();
 ?>

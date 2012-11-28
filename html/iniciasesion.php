@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysql_connect("localhost","root","12345");  
+$con = mysql_connect("localhost","root","");  
 
 if(!$con)
 {
@@ -12,7 +12,7 @@ mysql_select_db("classmates",$con);
 $valor1 = $_POST['usuario'];
 $valor2 = $_POST['contrasena'];
 
-$query=mysql_query("SELECT username,password FROM usuario WHERE username = '$valor1' AND password = '$valor2' ");
+echo $query=mysql_query("SELECT username,password FROM usuario WHERE username = '$valor1' AND password = '$valor2' ");
 // $resultado = @mysql_fetch_object("$query");
 $contador = 0; 
 while($resultado = mysql_fetch_array($query)) {

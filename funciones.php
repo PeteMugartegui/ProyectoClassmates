@@ -1,8 +1,21 @@
-<? php
+<?php
+function conectar(){
+	$host = "localhost";
+	$user = "root";
+	$pass = "";
+	$database ="classmates";
 
-$host = "localhost";
-$user = "root";
-$pass = "12345";
-$name ="classmates";
+	$conection = mysql_connect($host, $user, $pass);
+	if(!$conection){
+	    die('no se pudo conectar con el servidor'.mysql_error());
+	}else{
+		//echo "Conectado a mysql";
+		mysql_select_db($database, $conection);
+	}
+}
+
+function desconectar(){
+	mysql_close();
+}
 
 ?>
