@@ -43,7 +43,17 @@
 <header>
 	<img class="fade" src="../img/classmateslogo.png"/>
 </header>
+
 <section>
+	<?php 
+    session_start(); 
+    include('../funciones.php'); 
+    ?>
+     	<?php
+    		if(isset($_SESSION) { 
+        echo "Bienvenido".$_SESSION;
+    }
+    ?>
 	<div class="row-fluid">
 
 		<div class="span4"> 

@@ -2,7 +2,7 @@
 function conectar(){
 	$host = "localhost";
 	$user = "root";
-	$pass = "";
+	$pass = "12345";
 	$database ="classmates";
 
 	$conection = mysql_connect($host, $user, $pass);

@@ -138,10 +138,11 @@ padding-bottom: 20px;
 	background: #fff;
 	border-radius: 10px;
 	color: #000;
+	overflow:scroll;
 }
 .rectangle td{
-	color: #000
-	;
+	color: #000;
+
 }
 	
 
