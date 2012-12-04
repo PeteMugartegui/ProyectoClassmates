@@ -239,6 +239,13 @@
             </ul>
 
             <ul class="nav pull-right">
+                <li>
+                <a href="#perfil">
+                    <?php 
+                        echo $_COOKIE["usuario"];
+                    ?>
+                </a>
+                </li>
                 <li><a href="../../html/iniciasesion.html">Iniciar Sesión</a></li>
                 <li><a href="../../html/registro.html">Registrarse</a></li>
 

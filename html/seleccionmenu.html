@@ -1,4 +1,7 @@
-
+<?php
+include("iniciasesion.php");
+setcookie("user", "Pedro", time()+3600);
+?>
 <!DOCTYPE HTML>
 <html lang="es">
 <head>
@@ -46,13 +49,8 @@
 
 <section>
 	<?php 
-    session_start(); 
     include('../funciones.php'); 
-    ?>
-     	<?php
-    		if(isset($_SESSION) { 
-        echo "Bienvenido".$_SESSION;
-    }
+    echo $_COOKIE["user"];
     ?>
 	<div class="row-fluid">
 

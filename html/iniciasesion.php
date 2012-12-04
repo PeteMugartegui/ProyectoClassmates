@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 $con = mysql_connect("localhost","root","12345");  
 
 if(!$con)
@@ -11,22 +11,30 @@ mysql_select_db("classmates",$con);
 
 $valor1 = $_POST['usuario'];
 $valor2 = $_POST['contrasena'];
-$SESSION_query = mysql_query("SELECT username FROM usuario WHERE username='$valor1'");
-$_SESSION= mysql_fetch_array($SESSION_query);
-
-echo $query=mysql_query("SELECT username,password FROM usuario WHERE username = '$valor1' AND password = '$valor2' ");
+//$username = mysql_fetch_array($query);
+$sql = "SELECT username,password FROM usuario WHERE username = '$valor1' AND password = '$valor2' ";
+$query = mysql_query($sql);
 // $resultado = @mysql_fetch_object("$query");
-$contador = 0; 
-while($resultado = mysql_fetch_array($query)) {
-   $contador=$contador+1;
+$user = mysql_fetch_array($query);
+;
+//$contador = 0; 
+//echo $resultado = mysql_affected_rows($query);echo "<pre>";
+if ($user["username"] == $valor1) {
+	setcookie("usuario","$valor1",time()+3600);
+	echo "<script type='text/javascript'>
+window.location='seleccionmenu.php';
+</script>";
+	//header("Location: seleccionmenu.php");
 }
+/*while($resultado = mysql_fetch_array($query)) {
+   //$contador=$contador+1;
+}*/
 
-if ($contador==1) {
-	header("Location: seleccionmenu.html");
+//f ($contador==1) {
+	//header("Location: seleccionmenu.php");
 	
-}else{
+else{
 	echo "El usuario y/o password son incorrectos";
-	
 }
 
 

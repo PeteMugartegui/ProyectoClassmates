@@ -1,3 +1,7 @@
+<?php
+include("iniciasesion.php");
+setcookie("user", "$_SESSION", time()+3600);
+?>
 <!DOCTYPE HTML>
 <html lang="es">
 <head>

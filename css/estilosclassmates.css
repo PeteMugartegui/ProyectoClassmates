@@ -4,6 +4,17 @@
 	padding: 0;
 }
 
+@font-face {
+    font-family: 'clementine_sketchregular';
+    src: url('../fonts/clementine_sketch-webfont.eot');
+    src: url('../fonts/clementine_sketch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clementine_sketch-webfont.woff') format('woff'),
+         url('../fonts/clementine_sketch-webfont.ttf') format('truetype'),
+         url('../fonts/clementine_sketch-webfont.svg#clementine_sketchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 article,figcaption,figure,footer,header,hgroup,nav,section{
 	display: block;
 }
@@ -90,10 +101,17 @@ img{
 label{
  	color: #ffffff;
 }
-
 p#text{
 	color:#ffffff;
 }
+p#Username{
+	color:#ffffff;
+	text-align: center;
+	font-size: 2em;
+	font-family: "clementine_sketchregular";
+
+}
+
 
 section#contenido{
 	text-align: center;
