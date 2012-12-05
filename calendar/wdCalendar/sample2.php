@@ -233,22 +233,27 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="../../index.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li ><a href="../../html/contacto.html">Contact</a></li>
-              <li><a href="../../html/seleccionmenu.html">Menú</a></li>
+              <li><a href="../../html/About.html">About</a></li>
+              <li><a href="../../html/contacto.html">Contact</a></li>
+              <li class="active"><a href="../../html/seleccionmenu.php">Menú</a></li>  
             </ul>
 
             <ul class="nav pull-right">
-                <li>
-                <a href="#perfil">
-                    <?php 
-                        echo $_COOKIE["usuario"];
-                    ?>
-                </a>
-                </li>
                 <li><a href="../../html/iniciasesion.html">Iniciar Sesión</a></li>
                 <li><a href="../../html/registro.html">Registrarse</a></li>
 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <?php 
+                    echo $_COOKIE["usuario"];
+                   ?>
+                 <b class="caret"></b>
+               </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Cerrar Sesion</a></li>
+                  <li><a href="#">Algo mas</a></li>
+                </ul>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

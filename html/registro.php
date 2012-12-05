@@ -22,6 +22,10 @@ if(!$con)
 	mysql_select_db("classmates",$con);
 
 	setcookie("usuario",$valor1,time()+3600);
+    setcookie("mail",$valor1,time()+3600,"/");
+    setcookie("nombre",$valor4,time()+3600,"/");
+    setcookie("apellido",$valor5,time()+3600,"/");
+    setcookie("direccion",$valor6,time()+3600,"/");
 	$consulta="INSERT INTO usuario(username,email,password,nombres,apellidos,direccion)
 	   VALUES ('$_POST[usuario]','$_POST[email]','$_POST[contrasena]','$_POST[nombre]','$_POST[apellido]','$_POST[direccion]')";
 	

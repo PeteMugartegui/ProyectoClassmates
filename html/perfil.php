@@ -31,17 +31,21 @@
             </ul>
 
             <ul class="nav pull-right">
-            	<li>
-            	<a href="#perfil">
-            		<?php  
-    					echo $_COOKIE["usuario"];
-    				?>
-    			</a>
-    			</li>
-            	<li><a href="iniciasesion.html">Iniciar Sesión</a></li>
-            	<li><a href="registro.html">Registrarse</a></li>
-            	<li><a href="cerrarsesion.php">Cerrar Sesion</a></li>
+              <li><a href="iniciasesion.html">Iniciar Sesión</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <?php 
+                    echo $_COOKIE["usuario"];
+                   ?>
+                 <b class="caret"></b>
+               </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Cerrar Sesion</a></li>
+                  <li><a href="#">Algo mas</a></li>
+                </ul>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -54,7 +58,22 @@
 <section>
 	
 	<section id="principal">
-		
+		<p>Tu nombre de usuario es:</p>
+    <p>
+      <?php 
+        echo $_COOKIE["usuario"];
+      ?>
+    </p>
+    <?php
+    include("../funciones.php");
+    conectar();
+    $query = mysql_query("SELECT * FROM usuario WHERE username='$_COOKIE[usuario]'");
+          echo $query["email"];//EN CADA CELDA SE COLOCA EL CONTENIDO DE REG
+          echo $query["nombres"];
+          echo $query["apellidos"];
+          echo $query["direccion"];
+          echo "Hola";
+    ?>
 	</section>
 	<aside>
 		<!--Publicidad y Widgets Sociales-->

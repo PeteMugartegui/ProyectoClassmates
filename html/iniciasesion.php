@@ -20,7 +20,7 @@ $user = mysql_fetch_array($query);
 //$contador = 0; 
 //echo $resultado = mysql_affected_rows($query);echo "<pre>";
 if ($user["username"] == $valor1) {
-	setcookie("usuario","$valor1",time()+3600);
+	setcookie("usuario","$valor1",time()+3600,"/");
 	echo "<script type='text/javascript'>
 window.location='seleccionmenu.php';
 </script>";

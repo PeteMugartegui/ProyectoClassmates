@@ -31,16 +31,21 @@
             </ul>
 
             <ul class="nav pull-right">
-              <li>
-                <a href="#perfil">
-                <?php 
-                  echo $_COOKIE["usuario"];
-                ?>
-                </a>
-              </li>
             	<li><a href="iniciasesion.html">Iniciar Sesión</a></li>
             	<li><a href="registro.html">Registrarse</a></li>
 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   <?php 
+                    echo $_COOKIE["usuario"];
+                   ?>
+                 <b class="caret"></b>
+               </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Cerrar Sesion</a></li>
+                  <li><a href="#">Algo mas</a></li>
+                </ul>
+              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,13 +61,13 @@ echo "Bienvenido   ".$_COOKIE['usuario'] ." !";
 	<div class="row-fluid">
 
 		<div class="span4"> 
-			<a href="horario.html"><img src="../img/horario.jpg"></a>
+			<a href="horario.php"><img src="../img/horario.jpg"></a>
 		</div>
 		<div class="span4"> 
 			<a href="http://localhost/ProyectoClassmates/calendar/wdCalendar/sample2.php"><img src="../img/agenda.jpg"></a>
 		</div>
 		<div class="span4"> 
-			<a href="#perfil"><img src="../img/perfil.jpg"></a>
+			<a href="perfil.php"><img src="../img/perfil.jpg"></a>
 		</div>
 
 	</div>
